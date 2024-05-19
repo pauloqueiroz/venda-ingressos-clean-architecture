@@ -1,5 +1,7 @@
 package br.com.example.domain.entities.usuario;
 
+import br.com.example.domain.Endereco;
+
 import java.time.LocalDate;
 
 public class Usuario {
@@ -8,6 +10,7 @@ public class Usuario {
     private String nome;
     private LocalDate nascimento;
     private String email;
+    private Endereco endereco;
 
     public Usuario(String nome, LocalDate nascimento, String email, String cpf) {
         this.nome = nome;
